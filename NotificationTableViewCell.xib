@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="coachApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veS-Q8-Y9s" customClass="CardView" customModule="coachApp" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="89"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nizar" translatesAutoresizingMaskIntoConstraints="NO" id="uWa-Jc-WO2">
+                                <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="pFe-Zo-1gh"/>
+                                    <constraint firstAttribute="height" constant="48" id="sjk-fS-1z3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2s Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-wF-LsP">
+                                <rect key="frame" x="981" y="35" width="40" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4y-v2-8lf">
+                                <rect key="frame" x="0.0" y="70" width="310" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nizar elhraeich liked your video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx9-3Q-XRn">
+                                <rect key="frame" x="70" y="8" width="202" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2s Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INL-rE-5Zt">
+                                <rect key="frame" x="70" y="34" width="40" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nx9-3Q-XRn" firstAttribute="top" secondItem="veS-Q8-Y9s" secondAttribute="top" constant="8" id="6CM-gw-14T"/>
+                            <constraint firstItem="nx9-3Q-XRn" firstAttribute="leading" secondItem="uWa-Jc-WO2" secondAttribute="trailing" constant="14" id="6zk-ZN-cGf"/>
+                            <constraint firstAttribute="bottom" secondItem="g9b-wF-LsP" secondAttribute="bottom" constant="32" id="7r7-jW-1if"/>
+                            <constraint firstItem="G4y-v2-8lf" firstAttribute="leading" secondItem="veS-Q8-Y9s" secondAttribute="leading" id="GA3-al-tzR"/>
+                            <constraint firstItem="g9b-wF-LsP" firstAttribute="top" secondItem="veS-Q8-Y9s" secondAttribute="top" constant="35" id="RNb-Mv-wwO"/>
+                            <constraint firstItem="INL-rE-5Zt" firstAttribute="top" secondItem="nx9-3Q-XRn" secondAttribute="bottom" constant="9" id="UCw-Ih-kei"/>
+                            <constraint firstItem="G4y-v2-8lf" firstAttribute="top" secondItem="uWa-Jc-WO2" secondAttribute="bottom" constant="14" id="Wlr-JO-4EH"/>
+                            <constraint firstItem="uWa-Jc-WO2" firstAttribute="leading" secondItem="veS-Q8-Y9s" secondAttribute="leading" constant="8" id="ZuU-O2-rMZ"/>
+                            <constraint firstItem="INL-rE-5Zt" firstAttribute="leading" secondItem="uWa-Jc-WO2" secondAttribute="trailing" constant="14" id="ZuY-f9-WxU"/>
+                            <constraint firstItem="G4y-v2-8lf" firstAttribute="top" secondItem="INL-rE-5Zt" secondAttribute="bottom" constant="21" id="fbd-an-q0b"/>
+                            <constraint firstAttribute="trailing" secondItem="G4y-v2-8lf" secondAttribute="trailing" id="obt-TY-DVr"/>
+                            <constraint firstAttribute="bottom" secondItem="G4y-v2-8lf" secondAttribute="bottom" constant="19" id="qnw-19-lWp"/>
+                            <constraint firstItem="uWa-Jc-WO2" firstAttribute="top" secondItem="veS-Q8-Y9s" secondAttribute="top" constant="8" id="w3e-b2-YsR"/>
+                            <constraint firstItem="g9b-wF-LsP" firstAttribute="leading" secondItem="veS-Q8-Y9s" secondAttribute="leading" constant="981" id="xc2-p9-zC0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="veS-Q8-Y9s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5BO-Lu-l78"/>
+                    <constraint firstAttribute="trailing" secondItem="veS-Q8-Y9s" secondAttribute="trailing" constant="5" id="9C1-qx-HRz"/>
+                    <constraint firstAttribute="bottom" secondItem="veS-Q8-Y9s" secondAttribute="bottom" constant="5" id="RRr-FL-qqV"/>
+                    <constraint firstItem="veS-Q8-Y9s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="vvw-va-sR1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imguser" destination="uWa-Jc-WO2" id="5g4-Wt-aAE"/>
+                <outlet property="texliked" destination="nx9-3Q-XRn" id="luG-0n-WiO"/>
+                <outlet property="timeago" destination="INL-rE-5Zt" id="MDq-I6-lfx"/>
+            </connections>
+            <point key="canvasLocation" x="-89" y="76.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Nizar" width="959" height="960"/>
+    </resources>
+</document>

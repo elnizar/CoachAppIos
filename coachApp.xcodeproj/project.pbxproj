@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F4D7800129B2411C4BF441D /* Pods_coachApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D81B2A1259A9E0E079744B /* Pods_coachApp.framework */; };
+		540530B1206AD37C0015E242 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540530B0206AD37C0015E242 /* CommentViewController.swift */; };
+		540530B3206AD3910015E242 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540530B2206AD3910015E242 /* VideoViewController.swift */; };
+		540530B6206ADFD40015E242 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540530B4206ADFD30015E242 /* PostTableViewCell.swift */; };
+		540530B7206ADFD40015E242 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540530B5206ADFD40015E242 /* PostTableViewCell.xib */; };
+		540DA1BC2066C2AF00D4613A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540DA1BB2066C2AF00D4613A /* HomeViewController.swift */; };
+		5422258A2066CAA200772294 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542225892066CAA200772294 /* LoginViewController.swift */; };
+		5422258C2066CAC900772294 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5422258B2066CAC900772294 /* RegisterViewController.swift */; };
+		542A635A20851BA500234435 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A635920851BA500234435 /* ProfileViewController.swift */; };
+		54350C882087C396002FAAFC /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54350C872087C396002FAAFC /* MyCollectionViewCell.swift */; };
+		5445CBD020644A8600E6DCFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5445CBCF20644A8600E6DCFA /* AppDelegate.swift */; };
+		5445CBD220644A8600E6DCFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5445CBD120644A8600E6DCFA /* ViewController.swift */; };
+		5445CBD520644A8600E6DCFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5445CBD320644A8600E6DCFA /* Main.storyboard */; };
+		5445CBD820644A8600E6DCFA /* coachApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5445CBD620644A8600E6DCFA /* coachApp.xcdatamodeld */; };
+		5445CBDA20644A8600E6DCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5445CBD920644A8600E6DCFA /* Assets.xcassets */; };
+		5445CBDD20644A8600E6DCFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5445CBDB20644A8600E6DCFA /* LaunchScreen.storyboard */; };
+		5445CBE820644A8600E6DCFA /* coachAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5445CBE720644A8600E6DCFA /* coachAppTests.swift */; };
+		5445CBF320644A8600E6DCFA /* coachAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5445CBF220644A8600E6DCFA /* coachAppUITests.swift */; };
+		5445CC012064626900E6DCFA /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5445CC002064626900E6DCFA /* DesignableTextField.swift */; };
+		5445CC032064800100E6DCFA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5445CC022064800000E6DCFA /* SignUpViewController.swift */; };
+		545784B5208BD5EA005A41A1 /* ProfileFreindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545784B4208BD5EA005A41A1 /* ProfileFreindViewController.swift */; };
+		545EB6D12093743B00652E33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545EB6D02093743B00652E33 /* Constants.swift */; };
+		545EB6D3209376CF00652E33 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545EB6D2209376CF00652E33 /* ChatViewController.swift */; };
+		5470F04C209131DF00873D93 /* NewMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470F04A209131DF00873D93 /* NewMessageTableViewCell.swift */; };
+		5470F04D209131DF00873D93 /* NewMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5470F04B209131DF00873D93 /* NewMessageTableViewCell.xib */; };
+		5470F04F209131FC00873D93 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470F04E209131FC00873D93 /* NewMessageViewController.swift */; };
+		547BF524206D34BE007DC55A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547BF523206D34BE007DC55A /* User.swift */; };
+		547BF526206D386D007DC55A /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547BF525206D386D007DC55A /* Video.swift */; };
+		547BF528206D39AD007DC55A /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547BF527206D39AD007DC55A /* Domain.swift */; };
+		547BF52C206D3E10007DC55A /* Speciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547BF52B206D3E10007DC55A /* Speciality.swift */; };
+		547BF52E206D3E61007DC55A /* Jaime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547BF52D206D3E61007DC55A /* Jaime.swift */; };
+		547BF530206D3EB4007DC55A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547BF52F206D3EB4007DC55A /* Comment.swift */; };
+		5485692A207BE6100025BC9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54856929207BE60F0025BC9A /* GoogleService-Info.plist */; };
+		54890AE52068566700B857E3 /* AddVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54890AE42068566700B857E3 /* AddVideoViewController.swift */; };
+		549103492076C66E00941CEB /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549103472076C66E00941CEB /* CommentTableViewCell.swift */; };
+		5491034A2076C66E00941CEB /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549103482076C66E00941CEB /* CommentTableViewCell.xib */; };
+		54C1CB0420A4E0E700306E87 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1CB0320A4E0E700306E87 /* CardView.swift */; };
+		54C1CB0720A4EC1500306E87 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1CB0520A4EC1500306E87 /* NotificationTableViewCell.swift */; };
+		54C1CB0820A4EC1500306E87 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C1CB0620A4EC1500306E87 /* NotificationTableViewCell.xib */; };
+		54CB759920A60C6000205FFF /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CB759820A60C6000205FFF /* NotificationViewController.swift */; };
+		54E172BD2091426F0054DB57 /* Userf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E172BC2091426E0054DB57 /* Userf.swift */; };
+		54EB8374208E91B600C9A813 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8372208E91B600C9A813 /* SearchTableViewCell.swift */; };
+		54EB8375208E91B600C9A813 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54EB8373208E91B600C9A813 /* SearchTableViewCell.xib */; };
+		54EB8379208E931600C9A813 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8378208E931600C9A813 /* SearchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5445CBE420644A8600E6DCFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5445CBC420644A8600E6DCFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5445CBCB20644A8600E6DCFA;
+			remoteInfo = coachApp;
+		};
+		5445CBEF20644A8600E6DCFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5445CBC420644A8600E6DCFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5445CBCB20644A8600E6DCFA;
+			remoteInfo = coachApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19C7C2820259E7027944BA7A /* Pods-coachApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coachApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-coachApp/Pods-coachApp.release.xcconfig"; sourceTree = "<group>"; };
+		540530B0206AD37C0015E242 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		540530B2206AD3910015E242 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		540530B4206ADFD30015E242 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		540530B5206ADFD40015E242 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		540DA1BB2066C2AF00D4613A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		542225892066CAA200772294 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5422258B2066CAC900772294 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		542A635920851BA500234435 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		54350C872087C396002FAAFC /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		5445CBCC20644A8600E6DCFA /* coachApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coachApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5445CBCF20644A8600E6DCFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5445CBD120644A8600E6DCFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5445CBD420644A8600E6DCFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5445CBD720644A8600E6DCFA /* coachApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coachApp.xcdatamodel; sourceTree = "<group>"; };
+		5445CBD920644A8600E6DCFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5445CBDC20644A8600E6DCFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5445CBDE20644A8600E6DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5445CBE320644A8600E6DCFA /* coachAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coachAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5445CBE720644A8600E6DCFA /* coachAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coachAppTests.swift; sourceTree = "<group>"; };
+		5445CBE920644A8600E6DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5445CBEE20644A8600E6DCFA /* coachAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coachAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5445CBF220644A8600E6DCFA /* coachAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coachAppUITests.swift; sourceTree = "<group>"; };
+		5445CBF420644A8600E6DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5445CC002064626900E6DCFA /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		5445CC022064800000E6DCFA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		545784B4208BD5EA005A41A1 /* ProfileFreindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFreindViewController.swift; sourceTree = "<group>"; };
+		545EB6D02093743B00652E33 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		545EB6D2209376CF00652E33 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5470F04A209131DF00873D93 /* NewMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewCell.swift; sourceTree = "<group>"; };
+		5470F04B209131DF00873D93 /* NewMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewMessageTableViewCell.xib; sourceTree = "<group>"; };
+		5470F04E209131FC00873D93 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		547BF523206D34BE007DC55A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		547BF525206D386D007DC55A /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		547BF527206D39AD007DC55A /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		547BF52B206D3E10007DC55A /* Speciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speciality.swift; sourceTree = "<group>"; };
+		547BF52D206D3E61007DC55A /* Jaime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jaime.swift; sourceTree = "<group>"; };
+		547BF52F206D3EB4007DC55A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		54856929207BE60F0025BC9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5485692B207BED880025BC9A /* coachApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coachApp.entitlements; sourceTree = "<group>"; };
+		54890AE42068566700B857E3 /* AddVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoViewController.swift; sourceTree = "<group>"; };
+		549103472076C66E00941CEB /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		549103482076C66E00941CEB /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		54C1CB0320A4E0E700306E87 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		54C1CB0520A4EC1500306E87 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		54C1CB0620A4EC1500306E87 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		54CB759820A60C6000205FFF /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		54E172BC2091426E0054DB57 /* Userf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userf.swift; sourceTree = "<group>"; };
+		54EB8372208E91B600C9A813 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		54EB8373208E91B600C9A813 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		54EB8378208E931600C9A813 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A2C53904C53F4A539E4AF37A /* Pods-coachApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coachApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-coachApp/Pods-coachApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D2D81B2A1259A9E0E079744B /* Pods_coachApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coachApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5445CBC920644A8600E6DCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4D7800129B2411C4BF441D /* Pods_coachApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5445CBE020644A8600E6DCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5445CBEB20644A8600E6DCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D91C4894C580D1170382ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2D81B2A1259A9E0E079744B /* Pods_coachApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		365C11AB82C82645BFD77F7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2C53904C53F4A539E4AF37A /* Pods-coachApp.debug.xcconfig */,
+				19C7C2820259E7027944BA7A /* Pods-coachApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5445CBC320644A8600E6DCFA = {
+			isa = PBXGroup;
+			children = (
+				54CB759820A60C6000205FFF /* NotificationViewController.swift */,
+				54C1CB0520A4EC1500306E87 /* NotificationTableViewCell.swift */,
+				54C1CB0620A4EC1500306E87 /* NotificationTableViewCell.xib */,
+				545EB6D2209376CF00652E33 /* ChatViewController.swift */,
+				545EB6D02093743B00652E33 /* Constants.swift */,
+				5445CBCE20644A8600E6DCFA /* coachApp */,
+				5445CBE620644A8600E6DCFA /* coachAppTests */,
+				5445CBF120644A8600E6DCFA /* coachAppUITests */,
+				5445CBCD20644A8600E6DCFA /* Products */,
+				365C11AB82C82645BFD77F7F /* Pods */,
+				0D91C4894C580D1170382ED9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5445CBCD20644A8600E6DCFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5445CBCC20644A8600E6DCFA /* coachApp.app */,
+				5445CBE320644A8600E6DCFA /* coachAppTests.xctest */,
+				5445CBEE20644A8600E6DCFA /* coachAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5445CBCE20644A8600E6DCFA /* coachApp */ = {
+			isa = PBXGroup;
+			children = (
+				54C1CB0320A4E0E700306E87 /* CardView.swift */,
+				5485692B207BED880025BC9A /* coachApp.entitlements */,
+				54856929207BE60F0025BC9A /* GoogleService-Info.plist */,
+				547BF51E206D3450007DC55A /* Entity */,
+				5445CBCF20644A8600E6DCFA /* AppDelegate.swift */,
+				5445CBD120644A8600E6DCFA /* ViewController.swift */,
+				5445CBD320644A8600E6DCFA /* Main.storyboard */,
+				5445CC022064800000E6DCFA /* SignUpViewController.swift */,
+				5445CBD920644A8600E6DCFA /* Assets.xcassets */,
+				5445CBDB20644A8600E6DCFA /* LaunchScreen.storyboard */,
+				5445CBDE20644A8600E6DCFA /* Info.plist */,
+				5445CBD620644A8600E6DCFA /* coachApp.xcdatamodeld */,
+				5470F04E209131FC00873D93 /* NewMessageViewController.swift */,
+				5445CC002064626900E6DCFA /* DesignableTextField.swift */,
+				540DA1BB2066C2AF00D4613A /* HomeViewController.swift */,
+				54EB8378208E931600C9A813 /* SearchViewController.swift */,
+				542225892066CAA200772294 /* LoginViewController.swift */,
+				5422258B2066CAC900772294 /* RegisterViewController.swift */,
+				54890AE42068566700B857E3 /* AddVideoViewController.swift */,
+				540530B0206AD37C0015E242 /* CommentViewController.swift */,
+				540530B2206AD3910015E242 /* VideoViewController.swift */,
+				545784B4208BD5EA005A41A1 /* ProfileFreindViewController.swift */,
+				542A635920851BA500234435 /* ProfileViewController.swift */,
+				549103472076C66E00941CEB /* CommentTableViewCell.swift */,
+				54EB8372208E91B600C9A813 /* SearchTableViewCell.swift */,
+				54350C872087C396002FAAFC /* MyCollectionViewCell.swift */,
+				540530B4206ADFD30015E242 /* PostTableViewCell.swift */,
+				5470F04A209131DF00873D93 /* NewMessageTableViewCell.swift */,
+				5470F04B209131DF00873D93 /* NewMessageTableViewCell.xib */,
+				549103482076C66E00941CEB /* CommentTableViewCell.xib */,
+				540530B5206ADFD40015E242 /* PostTableViewCell.xib */,
+				54EB8373208E91B600C9A813 /* SearchTableViewCell.xib */,
+			);
+			path = coachApp;
+			sourceTree = "<group>";
+		};
+		5445CBE620644A8600E6DCFA /* coachAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5445CBE720644A8600E6DCFA /* coachAppTests.swift */,
+				5445CBE920644A8600E6DCFA /* Info.plist */,
+			);
+			path = coachAppTests;
+			sourceTree = "<group>";
+		};
+		5445CBF120644A8600E6DCFA /* coachAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5445CBF220644A8600E6DCFA /* coachAppUITests.swift */,
+				5445CBF420644A8600E6DCFA /* Info.plist */,
+			);
+			path = coachAppUITests;
+			sourceTree = "<group>";
+		};
+		547BF51E206D3450007DC55A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				547BF523206D34BE007DC55A /* User.swift */,
+				547BF525206D386D007DC55A /* Video.swift */,
+				547BF527206D39AD007DC55A /* Domain.swift */,
+				547BF52B206D3E10007DC55A /* Speciality.swift */,
+				547BF52D206D3E61007DC55A /* Jaime.swift */,
+				547BF52F206D3EB4007DC55A /* Comment.swift */,
+				54E172BC2091426E0054DB57 /* Userf.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5445CBCB20644A8600E6DCFA /* coachApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5445CBF720644A8600E6DCFA /* Build configuration list for PBXNativeTarget "coachApp" */;
+			buildPhases = (
+				B081363B80831276962274D3 /* [CP] Check Pods Manifest.lock */,
+				5445CBC820644A8600E6DCFA /* Sources */,
+				5445CBC920644A8600E6DCFA /* Frameworks */,
+				5445CBCA20644A8600E6DCFA /* Resources */,
+				CB4C776205BABB4712F4FE2A /* [CP] Embed Pods Frameworks */,
+				0EDAFA2D9BEBFBECA44A904D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coachApp;
+			productName = coachApp;
+			productReference = 5445CBCC20644A8600E6DCFA /* coachApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5445CBE220644A8600E6DCFA /* coachAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5445CBFA20644A8600E6DCFA /* Build configuration list for PBXNativeTarget "coachAppTests" */;
+			buildPhases = (
+				5445CBDF20644A8600E6DCFA /* Sources */,
+				5445CBE020644A8600E6DCFA /* Frameworks */,
+				5445CBE120644A8600E6DCFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5445CBE520644A8600E6DCFA /* PBXTargetDependency */,
+			);
+			name = coachAppTests;
+			productName = coachAppTests;
+			productReference = 5445CBE320644A8600E6DCFA /* coachAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5445CBED20644A8600E6DCFA /* coachAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5445CBFD20644A8600E6DCFA /* Build configuration list for PBXNativeTarget "coachAppUITests" */;
+			buildPhases = (
+				5445CBEA20644A8600E6DCFA /* Sources */,
+				5445CBEB20644A8600E6DCFA /* Frameworks */,
+				5445CBEC20644A8600E6DCFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5445CBF020644A8600E6DCFA /* PBXTargetDependency */,
+			);
+			name = coachAppUITests;
+			productName = coachAppUITests;
+			productReference = 5445CBEE20644A8600E6DCFA /* coachAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5445CBC420644A8600E6DCFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = ESPRIT;
+				TargetAttributes = {
+					5445CBCB20644A8600E6DCFA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					5445CBE220644A8600E6DCFA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5445CBCB20644A8600E6DCFA;
+					};
+					5445CBED20644A8600E6DCFA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5445CBCB20644A8600E6DCFA;
+					};
+				};
+			};
+			buildConfigurationList = 5445CBC720644A8600E6DCFA /* Build configuration list for PBXProject "coachApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5445CBC320644A8600E6DCFA;
+			productRefGroup = 5445CBCD20644A8600E6DCFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5445CBCB20644A8600E6DCFA /* coachApp */,
+				5445CBE220644A8600E6DCFA /* coachAppTests */,
+				5445CBED20644A8600E6DCFA /* coachAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5445CBCA20644A8600E6DCFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5445CBDD20644A8600E6DCFA /* LaunchScreen.storyboard in Resources */,
+				5445CBDA20644A8600E6DCFA /* Assets.xcassets in Resources */,
+				5445CBD520644A8600E6DCFA /* Main.storyboard in Resources */,
+				540530B7206ADFD40015E242 /* PostTableViewCell.xib in Resources */,
+				54EB8375208E91B600C9A813 /* SearchTableViewCell.xib in Resources */,
+				5491034A2076C66E00941CEB /* CommentTableViewCell.xib in Resources */,
+				5470F04D209131DF00873D93 /* NewMessageTableViewCell.xib in Resources */,
+				5485692A207BE6100025BC9A /* GoogleService-Info.plist in Resources */,
+				54C1CB0820A4EC1500306E87 /* NotificationTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5445CBE120644A8600E6DCFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5445CBEC20644A8600E6DCFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EDAFA2D9BEBFBECA44A904D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-coachApp/Pods-coachApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B081363B80831276962274D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coachApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB4C776205BABB4712F4FE2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-coachApp/Pods-coachApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer-Swift/YouTubePlayer_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-coachApp/Pods-coachApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5445CBC820644A8600E6DCFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54350C882087C396002FAAFC /* MyCollectionViewCell.swift in Sources */,
+				547BF524206D34BE007DC55A /* User.swift in Sources */,
+				54CB759920A60C6000205FFF /* NotificationViewController.swift in Sources */,
+				545784B5208BD5EA005A41A1 /* ProfileFreindViewController.swift in Sources */,
+				5422258A2066CAA200772294 /* LoginViewController.swift in Sources */,
+				54C1CB0420A4E0E700306E87 /* CardView.swift in Sources */,
+				54E172BD2091426F0054DB57 /* Userf.swift in Sources */,
+				542A635A20851BA500234435 /* ProfileViewController.swift in Sources */,
+				547BF52C206D3E10007DC55A /* Speciality.swift in Sources */,
+				5445CBD220644A8600E6DCFA /* ViewController.swift in Sources */,
+				547BF52E206D3E61007DC55A /* Jaime.swift in Sources */,
+				54EB8374208E91B600C9A813 /* SearchTableViewCell.swift in Sources */,
+				5445CBD020644A8600E6DCFA /* AppDelegate.swift in Sources */,
+				545EB6D12093743B00652E33 /* Constants.swift in Sources */,
+				54890AE52068566700B857E3 /* AddVideoViewController.swift in Sources */,
+				547BF530206D3EB4007DC55A /* Comment.swift in Sources */,
+				547BF526206D386D007DC55A /* Video.swift in Sources */,
+				5422258C2066CAC900772294 /* RegisterViewController.swift in Sources */,
+				540530B3206AD3910015E242 /* VideoViewController.swift in Sources */,
+				5445CBD820644A8600E6DCFA /* coachApp.xcdatamodeld in Sources */,
+				5445CC012064626900E6DCFA /* DesignableTextField.swift in Sources */,
+				540530B1206AD37C0015E242 /* CommentViewController.swift in Sources */,
+				54EB8379208E931600C9A813 /* SearchViewController.swift in Sources */,
+				5470F04C209131DF00873D93 /* NewMessageTableViewCell.swift in Sources */,
+				547BF528206D39AD007DC55A /* Domain.swift in Sources */,
+				5470F04F209131FC00873D93 /* NewMessageViewController.swift in Sources */,
+				5445CC032064800100E6DCFA /* SignUpViewController.swift in Sources */,
+				549103492076C66E00941CEB /* CommentTableViewCell.swift in Sources */,
+				540DA1BC2066C2AF00D4613A /* HomeViewController.swift in Sources */,
+				545EB6D3209376CF00652E33 /* ChatViewController.swift in Sources */,
+				540530B6206ADFD40015E242 /* PostTableViewCell.swift in Sources */,
+				54C1CB0720A4EC1500306E87 /* NotificationTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5445CBDF20644A8600E6DCFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5445CBE820644A8600E6DCFA /* coachAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5445CBEA20644A8600E6DCFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5445CBF320644A8600E6DCFA /* coachAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5445CBE520644A8600E6DCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5445CBCB20644A8600E6DCFA /* coachApp */;
+			targetProxy = 5445CBE420644A8600E6DCFA /* PBXContainerItemProxy */;
+		};
+		5445CBF020644A8600E6DCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5445CBCB20644A8600E6DCFA /* coachApp */;
+			targetProxy = 5445CBEF20644A8600E6DCFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5445CBD320644A8600E6DCFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5445CBD420644A8600E6DCFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5445CBDB20644A8600E6DCFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5445CBDC20644A8600E6DCFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5445CBF520644A8600E6DCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5445CBF620644A8600E6DCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5445CBF820644A8600E6DCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C53904C53F4A539E4AF37A /* Pods-coachApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = coachApp/coachApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G96V29LG5G;
+				INFOPLIST_FILE = coachApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.coachApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5445CBF920644A8600E6DCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C7C2820259E7027944BA7A /* Pods-coachApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = coachApp/coachApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G96V29LG5G;
+				INFOPLIST_FILE = coachApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.coachApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5445CBFB20644A8600E6DCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coachAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.coachAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coachApp.app/coachApp";
+			};
+			name = Debug;
+		};
+		5445CBFC20644A8600E6DCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coachAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.coachAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coachApp.app/coachApp";
+			};
+			name = Release;
+		};
+		5445CBFE20644A8600E6DCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coachAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.coachAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coachApp;
+			};
+			name = Debug;
+		};
+		5445CBFF20644A8600E6DCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coachAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.coachAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coachApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5445CBC720644A8600E6DCFA /* Build configuration list for PBXProject "coachApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5445CBF520644A8600E6DCFA /* Debug */,
+				5445CBF620644A8600E6DCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5445CBF720644A8600E6DCFA /* Build configuration list for PBXNativeTarget "coachApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5445CBF820644A8600E6DCFA /* Debug */,
+				5445CBF920644A8600E6DCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5445CBFA20644A8600E6DCFA /* Build configuration list for PBXNativeTarget "coachAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5445CBFB20644A8600E6DCFA /* Debug */,
+				5445CBFC20644A8600E6DCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5445CBFD20644A8600E6DCFA /* Build configuration list for PBXNativeTarget "coachAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5445CBFE20644A8600E6DCFA /* Debug */,
+				5445CBFF20644A8600E6DCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5445CBD620644A8600E6DCFA /* coachApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5445CBD720644A8600E6DCFA /* coachApp.xcdatamodel */,
+			);
+			currentVersion = 5445CBD720644A8600E6DCFA /* coachApp.xcdatamodel */;
+			path = coachApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5445CBC420644A8600E6DCFA /* Project object */;
+}
